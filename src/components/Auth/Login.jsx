@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const Login = () => {
     //two way binding
-    //
+    
     const [email,setEmail] = useState('')
         const [password,setPassword] = useState('')
 
