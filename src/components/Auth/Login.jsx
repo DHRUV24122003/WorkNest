@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 
-const Login = () => {
+const Login = ({handleLogin}) => {
     //two way binding
+    console.log(handleLogin  )
     
     const [email,setEmail] = useState('')
         const [password,setPassword] = useState('')
@@ -9,8 +10,9 @@ const Login = () => {
     
     const SubmitHandler = (e) =>{ 
         e.preventDefault();
+        handleLogin(email,password)
         console.log('the email is ', email)
-        console.log('the password is ', password)
+        console.log('the password is ',   password)
 
     }
   return (
